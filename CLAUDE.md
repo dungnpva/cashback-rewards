@@ -76,6 +76,7 @@ Re-read the final spec before continuing.
 Step 2: Acceptance Test — Write test for the NEXT rule only.
 @Nested = rule, test = example. @SpringBootTest + MockMvc.
 Complete Step 3 until this rule is GREEN before writing the next.
+Exception: /accept-all writes failing tests for every rule in a spec at once — use it only when explicitly asked.
 
 Step 3: TDD (Inner Loop) — RED → GREEN → REFACTOR.
 Write ONE failing test. Minimum code to pass. Refactor.
